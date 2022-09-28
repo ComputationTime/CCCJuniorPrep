@@ -1,11 +1,11 @@
-n = int(input())
+x = int(input())
+p1 = input()
+p2 = input()
 
-for x in range(n):
-  if x < n/2:
-    print( '*'*(2*x+1) + (2*(n-2*x)-2)*' ' + '*'*(2*x+1))
-  elif x > n/2:
-    print ('*'*(2*(n-x)+1) + (2*(n-2*(n-x))-2)*' ' + '*'*(2*(n-x)+1))
-  else:
-    print ('*'**n)
-  
-print ('*' + ' '*(2*n-2) + '*')
+c = 0
+
+for i in range(0,x):
+    if p1[i]==p2[i]=="C":
+      count = count+1
+
+print(count)
