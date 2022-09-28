@@ -1,8 +1,18 @@
 N = int(input())
 yesterday = input()
 today = input()
+
 count = 0
-for i, j in zip(yesterday, today):
-    if i == j and i == 'C':
-        count +=1
+
+for letterA, letterB in zip(yesterday, today):
+    if letterA == 'C' and letterA == letterB:
+        count += 1
+# alternative
+# for i in range(N):
+#     letterA = yesterday[i]
+#     letterB = today[i]
+#     if letterA == 'C' and letterA == letterB:
+#         count += 1
+
 print(count)
+
