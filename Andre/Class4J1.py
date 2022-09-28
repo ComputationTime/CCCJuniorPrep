@@ -16,7 +16,6 @@ for i in range(H//2+1):
 
 # for loop that goes down
 
-#
 
 for i in range(H//2):
     # print * left

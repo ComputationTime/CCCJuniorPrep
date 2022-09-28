@@ -1,0 +1,8 @@
+N = int(input())
+yesterday = input()
+today = input()
+count = 0
+for i, j in zip(yesterday, today):
+    if i == j and i == 'C':
+        count +=1
+print(count)
