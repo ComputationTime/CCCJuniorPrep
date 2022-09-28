@@ -1,16 +1,11 @@
-input_finish = False
+n = int(input())
 
-lowest_temp = 201
-lowest_temp_city = ''
-
-
-while not input_finish:
-    curr_line = input().split()
-    curr_line[1] = int(curr_line[1])
-    if curr_line[0].strip() == 'Waterloo':
-        input_finish = True
-    if curr_line[1] < lowest_temp:
-        lowest_temp = curr_line[1]
-        lowest_temp_city = curr_line[0]
-
-print(lowest_temp_city)
+for x in range(n):
+  if x < n/2:
+    print( '*'*(2*x+1) + (2*(n-2*x)-2)*' ' + '*'*(2*x+1))
+  elif x > n/2:
+    print ('*'*(2*(n-x)+1) + (2*(n-2*(n-x))-2)*' ' + '*'*(2*(n-x)+1))
+  else:
+    print ('*'**n)
+  
+print ('*' + ' '*(2*n-2) + '*')
