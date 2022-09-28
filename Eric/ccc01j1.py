@@ -9,7 +9,6 @@ for i in range(H//2):
     increase += 2
 
 
-
 increase-=2
 
 print(int(H * 2) * "*")
