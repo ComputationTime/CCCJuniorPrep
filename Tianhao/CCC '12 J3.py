@@ -5,3 +5,6 @@ for r in icon:
         for p in r:
             print(k * p, end='')
         print()
+
+
+        
