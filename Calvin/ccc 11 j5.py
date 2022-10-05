@@ -22,17 +22,3 @@ def goodCombo(N,x,l):
                 if (x+1) not in digits:
                     return False
     return True
-
-
-N = input()
-l = []
-for i in range(1,N):
-    l.append(input())
-
-
-max = eval("12345"[0:N-1])
-count = 1
-for i in range(1, max+1):
-    if goodNumber(N, i) and goodCombo(N, i, l):
-        count = count + 1
-print(count)
