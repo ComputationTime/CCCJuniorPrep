@@ -1,3 +1,7 @@
 import math
+
 num_squares = int(input())
-print(math.floor(math.sqrt(num_squares)))
+
+length = math.floor(math.sqrt(num_squares))
+
+print('The largest square has side length '+ str(length)+'.')
