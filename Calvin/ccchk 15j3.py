@@ -18,7 +18,7 @@ board = [[1 for i in range(6)]for j in range(6)]
 
 
 num_queens - int(input().split()[1])
-for i in range(nm_queens):
+for i in range(num_queens):
 
     pos = list(map(int, input().split()))
     place_queen(pos)
