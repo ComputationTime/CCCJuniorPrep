@@ -33,7 +33,7 @@ https://dmoj.ca/problem/ccc06j4
 ### J5
 https://dmoj.ca/problem/ccc04j5
 
-## Class 6 -- TODAY
+## Class 6 
 
 ### J1
 https://dmoj.ca/problem/ccc03j1
@@ -46,7 +46,7 @@ https://dmoj.ca/problem/ccc08j4
 ### J5
 https://dmoj.ca/problem/ccc06j5
 
-## Class 7
+## Class 7 -- TODAY
 
 ### J1
 https://dmoj.ca/problem/ccc05j1
