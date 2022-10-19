@@ -21,9 +21,6 @@ for _ in range(num_lines):
 print(output)
 
 
-- - 3 + 2 1 9
- 3  2 1 + - 9 -
-
 
 
 
