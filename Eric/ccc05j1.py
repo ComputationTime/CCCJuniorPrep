@@ -15,17 +15,12 @@ if daytime_min > 100:
 else:
     plan_B += evening_min*0.15 + weekend_min*0.2
 
+print(f"Plan A costs {plan_A:.2f}")
+print(f"Plan A costs {plan_B:.2f}")
 
-
-
-print(f"Plan A costs {plan_A}")
-print(f"Plan A costs {plan_B}")
-
-if plan_B < plan_A:
-    print("Plan B is cheapest")
-
-elif plan_B > plan_A:
-    print("Plan A is cheapest")
-
-else:
+if abs(plan_A-plan_B) <= 0.01:
     print("Plan A and B are the same price.")
+elif plan_A < plan_B:
+    print("Plan A is cheapest.")
+else:
+    print("Plan B is cheapest.")
