@@ -11,47 +11,46 @@ searchlist = []
 
 explored_tiles = []
 
-def search(knightx,knighty,steps):
+def search(x,y,steps):
     global output
     global completion
-    explored_tiles.append([knightx,knighty])
-    if completion != True:
-        if knightx == Bx and knighty == By:
-            completion = True
-            output = steps
-        else: 
-            searchlist.append(knightx-1)
-            searchlist.append(knighty-2)
-            searchlist.append(steps+1)
+    explored_tiles.append(x,y)
+    if x == Bx and y == By:
+        completion = True
+        output = steps
+    else:
+        searchlist.append(x-1)
+        searchlist.append(y-2)
+        searchlist.append(steps+1)
 
-            searchlist.append(knightx+1)
-            searchlist.append(knighty-2)
-            searchlist.append(steps+1)
+        searchlist.append(x+1)
+        searchlist.append(y-2)
+        searchlist.append(steps+1)
 
-            searchlist.append(knightx-1)
-            searchlist.append(knighty+2)
-            searchlist.append(steps+1)
+        searchlist.append(x-1)
+        searchlist.append(y+2)
+        searchlist.append(steps+1)
 
-            searchlist.append(knightx+1) 
-            searchlist.append(knighty+2)
-            searchlist.append(steps+1)
+        searchlist.append(x+1) 
+        searchlist.append(y+2)
+        searchlist.append(steps+1)
 
-            searchlist.append(knightx-2)
-            searchlist.append(knighty-1)
-            searchlist.append(steps+1)
+        searchlist.append(x-2)
+        searchlist.append(y-1)
+        searchlist.append(steps+1)
 
-            searchlist.append(knightx+2)
-            searchlist.append(knighty-2)
-            searchlist.append(steps+1)
+        searchlist.append(x+2)
+        searchlist.append(y-2)
+        searchlist.append(steps+1)
 
-            searchlist.append(knightx-2)
-            searchlist.append(knighty+1)
-            searchlist.append(steps+1)
+        searchlist.append(x-2)
+        searchlist.append(y+1)
+        searchlist.append(steps+1)
 
-            searchlist.append(knightx+2)
-            searchlist.append(knighty+1)
-            searchlist.append(steps+1)
-                    
+        searchlist.append(x+2)
+        searchlist.append(y+1)
+        searchlist.append(steps+1)
+                
 
 search(Ax,Ay,0)
 
@@ -59,7 +58,9 @@ while completion != True:
     x = searchlist.pop(0)
     y = searchlist.pop(1)
     steps = searchlist.pop(2)
-    search(x,y,steps)
+    if x < 10 and x > -1:
+        if y < 10 and y > -1:
+            search(x,y,steps)
 
 print(output)
                       
