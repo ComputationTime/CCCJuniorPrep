@@ -19,6 +19,8 @@ def search(x,y,steps):
         completion = True
         output = steps
     else:
+
+        # only append stuff that hasn't been explored yet. AKA use your explored_tiles list (this is for efficiency only)
         searchlist.append(x-1)
         searchlist.append(y-2)
         searchlist.append(steps+1)
@@ -55,9 +57,9 @@ def search(x,y,steps):
 search(Ax,Ay,0)
 
 while completion != True:
-    x = searchlist.pop(0)
-    y = searchlist.pop(1)
-    steps = searchlist.pop(2)
+    x = searchlist.pop(0) # pop also removes x from the list
+    y = searchlist.pop(1) # this means you should pop(0) again instead of pop(1)
+    steps = searchlist.pop(2) # and this should also be pop(0)
     if x < 10 and x > -1:
         if y < 10 and y > -1:
             search(x,y,steps)
