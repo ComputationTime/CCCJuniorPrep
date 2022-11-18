@@ -68,7 +68,7 @@ def search(x,y,steps):
             searchlist.append(x-2)
             searchlist.append(y+1)
             searchlist.append(steps+1)
-            
+
         if f"{x+2} {y+1}" in explored_tiles:
             pass
         else:
@@ -83,8 +83,8 @@ while completion != True:
     x = searchlist.pop(0) # pop also removes x from the list
     y = searchlist.pop(0) # this means you should pop(0) again instead of pop(1)
     steps = searchlist.pop(0) # and this should also be pop(0)
-    if x < 10 and x > -1:
-        if y < 10 and y > -1:
+    if x < 9 and x > -1:
+        if y < 9 and y > -1:
             search(x,y,steps)
 
 print(output)
