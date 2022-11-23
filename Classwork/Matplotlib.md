@@ -10,6 +10,7 @@ If you have a bunch of points (x1, y1), (x2, y2), (x3, y3), ...
 Put them in lists
 
 x = [x1,x2,x3,...]
+
 y = [y1,y2,y3,...]
 
 ## Run
