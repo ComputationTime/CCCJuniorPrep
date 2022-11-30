@@ -8,7 +8,6 @@ for _ in range(num_points):
     x.append(xp)
     y.append(yp)
 
-
 bottom_left = (min(x)-1, min(y)-1)
 top_right = (max(x)+1, max(y)+1)
 

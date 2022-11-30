@@ -4,7 +4,7 @@ finish = tuple(map(int, input().split()))
 def valid(num):
     return num < 9 and num > 0
 
-def movements(state):
+def movements(state, visited):
     x, y = state[0]
     steps = state[1]
     potential_moves = [
@@ -20,7 +20,8 @@ def movements(state):
     moves = []
     for move_step in potential_moves:
         if valid(move_step[0][0]) and valid(move_step[0][1]):
-            moves.append(move_step)
+            if move_step[0] not in visited:
+                moves.append(move_step)
     return moves
 
 

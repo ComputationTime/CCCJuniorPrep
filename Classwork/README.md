@@ -76,7 +76,7 @@ https://dmoj.ca/problem/ccc20j3
 ### J4
 https://dmoj.ca/problem/ccc07j4
 
-## Class 12 -- TODAY
+## Class 12
 
 ### J1
 https://dmoj.ca/problem/ccc12j1
@@ -86,3 +86,14 @@ https://dmoj.ca/problem/ccc01j2
 https://dmoj.ca/problem/ccc04j2
 ### J5
 https://dmoj.ca/problem/ccc04j5
+
+## Class 13 -- TODAY
+
+### 1
+https://dmoj.ca/problem/ccc00j1
+### 2
+https://dmoj.ca/problem/ccc00j2
+### 3
+https://dmoj.ca/problem/ccc02j1
+### 4
+https://dmoj.ca/problem/ccc02j2
