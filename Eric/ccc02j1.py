@@ -27,9 +27,9 @@ elif number == 2:
     print('      *')
     print('      *')
     print(' * * *')
-    print('*')
-    print('*')
-    print('*')
+    print('*    ')
+    print('*    ')
+    print('*    ')
     print(' * * *')
 elif number == 3:
     print('* * *')
@@ -40,9 +40,8 @@ elif number == 3:
     print('      *')
     print('      *')
     print('      *')
-    print('* * * ')
+    print('* * *')
 elif number == 4:
-    print('')
     print('*     *')
     print('*     *')
     print('*     *')
@@ -50,7 +49,6 @@ elif number == 4:
     print('      *')
     print('      *')
     print('      *')
-    print('')
 elif number == 5:
     print(' * * *')
     print('*')
@@ -80,7 +78,6 @@ elif number == 7:
     print('      *')
     print('      *')
     print('      *')
-    print('')
 elif number == 8:
     print(' * * *')
     print('*     *')
@@ -100,4 +97,6 @@ elif number == 9:
     print('      *')
     print('      *')
     print('      *')
-    print('')
+
+    
+
