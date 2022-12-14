@@ -5,10 +5,10 @@ while quit != True:
     if word =='quit!':
         quit = True
     elif len(word) <= 4:
-        print(word)
+        pass
     else:
-        if word[-3] not in "aeiouy":
-            print(word.replace('or','our'))
+        if word[-3] not in "aeiouy" and word[-2:] == "or":
+            print(word.replace(word[-2:],'our'))
         else:
             print(word)
 
