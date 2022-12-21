@@ -173,3 +173,7 @@ https://dmoj.ca/problem/ccc04j1
 ### 3
 
 https://dmoj.ca/problem/ccc05j4
+
+### 4
+
+https://dmoj.ca/problem/ccc05j3
