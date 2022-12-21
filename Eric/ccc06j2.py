@@ -5,8 +5,8 @@ solutions = []
 
 count = 0
 
-for i in range(dice1+1):
-    for j in range(dice2+1):
+for i in range(1,dice1+1):
+    for j in range(1,dice2+1):
         if i + j == 10:
             count +=1
             solutions.append((i,j))
