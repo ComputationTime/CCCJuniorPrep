@@ -23,5 +23,3 @@ elif nikky < byron:
     print('Byron')
 else:
     print('Tied')
-
-print(nikky_steps)
