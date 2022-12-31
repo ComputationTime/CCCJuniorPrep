@@ -1,3 +1,4 @@
+'''
 a = int(input())
 b = int(input())
 c = int(input())
@@ -23,3 +24,36 @@ elif nikky < byron:
     print('Byron')
 else:
     print('Tied')
+'''
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+s = int(input())
+
+def distance(s, forward, backward):
+    position = 0
+    steps = 0
+    while steps < s:
+        for x in range(forward):
+            position += 1
+            steps += 1
+            if steps == s:
+                break
+        if steps < s:
+            for x in range(backward):
+                position -= 1
+                steps += 1
+                if steps == s:
+                    break
+    return position
+
+nikki_distance = distance(s, a, b)
+byron_distance = distance(s, c, d)
+
+if nikki_distance == byron_distance:
+    print("Tied")
+elif nikki_distance > byron_distance:
+    print("Nikki")
+elif nikki_distance < byron_distance:
+    print("Byron")
