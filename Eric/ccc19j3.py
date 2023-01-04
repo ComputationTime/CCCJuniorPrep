@@ -1,4 +1,4 @@
-#really scuffed but it works on dmoj
+
 
 
 N = int(input())

@@ -13,13 +13,44 @@ def diff_checker(line):
     
         
 
+while True:
+    line = input().split()
+    if line == 0:
+        break
+    line = list(map(int,line))
+    len = line.pop(0)
+    line_diff = diff_checker(line)
+ 
 
-line = input().split()
-line = list(map(int,line))
-line_diff = diff_checker(line)
-print(line_diff)
+
+    seq_found = False
+
+    for i in range(len):
+        if i == 0:
+            pass
+        else:
+            if line_diff[0:i] == line_diff[i:i*2]:
+                output = i
+                seq_found = True
+                break
+    
+    if seq_found != True:
+        if line_diff[0] == line_diff[-1]:
+            output = len-2
+        else:
+            output = len-1
+    
+    
+            
+
+    
+    print(output)
+    
+        
 
 
 
 
 
+
+    # 7 3 4 6 4 5 7 5
