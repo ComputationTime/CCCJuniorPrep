@@ -18,14 +18,13 @@ def solve():
     startX, startY = [int(x) for x in (input().split())]
     endX, endY = [int(x) for x in (input().split())]
     if (startX == endX and startY == endY):
-         return 0
+        print(0)
+        return 0
     goal = (endX, endY)
     length = 1
     checked = [(startX, startY)]
     check_list = generate_moves(startX, startY)
     while True:
-        print(checked)
-        print(check_list)
         next_layer = []
         remove_nodes = []
         if goal in check_list:
