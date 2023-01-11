@@ -1,13 +1,13 @@
 
-def solve(storage):
+def solve(data):
     length = 1
     while True:
         flag = 1
         diff = []
-        if len(storage) == 1:
+        if len(data) == 1:
             return 0
-        for i in range(1, len(storage)):
-            diff.append(storage[i] - storage[i-1])
+        for i in range(1, len(data)):
+            diff.append(data[i] - data[i-1])
         patt = []
         for i in range(len(diff)):
             try: 
@@ -30,9 +30,9 @@ def solve(storage):
         
 
 
-storage = [int(x) for x in input().split()]
-while storage != [0]:
-    storage = storage[1:]
-    print(solve(storage))
-    storage = [int(x) for x in input().split()]
+data = [int(x) for x in input().split()]
+while data != [0]:
+    data = data[1:]
+    print(solve(data))
+    data = [int(x) for x in input().split()]
 
