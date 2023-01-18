@@ -26,19 +26,16 @@ for i in range(1,n):
         combos.append(i)
 
 
+
+remove_arr = []
 for dependancy in dependancies: 
     for combo in combos:
         if combo in range(1,6):
             if combo == dependancy[0]:
-                print(dependancy[0], dependancy[1], "removing", combo)
-                combos.remove(combo)
-               
+                remove_arr.append(combo)
         else:
             if dependancy[0] in combo and dependancy[1] not in combo:
-                print(dependancy[0], dependancy[1], "removing", combo)
-                combos.remove(combo)
-                
+                remove_arr.append(combo)
 
-
-print(len(combos)+1)
+print(len(combos)+1 - len(set(remove_arr)))
 
