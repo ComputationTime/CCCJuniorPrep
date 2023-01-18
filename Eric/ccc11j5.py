@@ -30,10 +30,14 @@ for dependancy in dependancies:
     for combo in combos:
         if combo in range(1,6):
             if combo == dependancy[0]:
-               combos.remove(combo)
+                print(dependancy[0], dependancy[1], "removing", combo)
+                combos.remove(combo)
+               
         else:
             if dependancy[0] in combo and dependancy[1] not in combo:
+                print(dependancy[0], dependancy[1], "removing", combo)
                 combos.remove(combo)
+                
 
 
 print(len(combos)+1)
