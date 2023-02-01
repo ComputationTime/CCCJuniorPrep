@@ -2,41 +2,26 @@ n = int(input())
 k = int(input())
 
 
-combos = 1
-people = [1 for i in range(k)]
-people[-1] += n - k
+import math
 
+count = 0
+def solve(n,k,t):
+    global count
 
-def solve(n,k):
-    combos = 1
-    people = [1 for i in range(k)]
-    people[0] += n - k
-    for i in range(k-1):
-        while people[i] > people[i+1] and people[i]-1 >= people[i+1]+1:
-            people[i] -= 1
-            people[i+1] += 1
-            combos += 1
-            print(people)
-
-    # while (people[0] - people[1]) > 1:
-    #     for i in range(k-1):
-    #         print(i)
-    #         while people[i] > people[i+1]:
-    #             if (people[i+1]+1) > people[i]-1:
-    #                 try:
-    #                     people[i+2] += 1
-    #                     people[i] -= 1
-    #                 except:
-    #                     IndexError
-    #             else:
-    #                 people[i] -= 1
-    #                 people[i+1] += 1
-    #                 combos+=1
-    #                 print(people)
-    print(combos)
-
+    if n == k or k == 1:
+        # print(n,k,t)
+        count +=1
+        return 1
+    if n < k:
+        return 0
 
     
-solve(n,k)
+    for i in range(t,math.floor(n/k)+1):
+        solve(n-i,k-1,i)
 
+'7,3,1 6,3,2 6,2,1 5,1,2'
+
+    
+solve(n,k,1)
+print(count)
 
