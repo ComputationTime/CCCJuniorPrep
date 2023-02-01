@@ -22,35 +22,10 @@ while True:
     line_diff = diff_checker(line)
  
 
+    for i in range(1,len+1):
+        seq = []
+        pass
 
-    seq_found = False
-
-    for i in range(len):
-        if i == 0:
-            pass
-        else:
-            if i*2 >= len:
-                break
-            if line_diff[0:i] == line_diff[i:i*2]:
-                if line_diff[-1] != line_diff[0] or line_diff[i]:
-                    pass
-                else:
-                    output = i
-                    seq_found = True
-                    break
-
-    
-    if seq_found != True:
-        if line_diff[0] == line_diff[-1]:
-            output = len-2
-        else:
-            output = len-1
-    
-    
-            
-
-    print(line_diff)
-    print(output)
     
         
 

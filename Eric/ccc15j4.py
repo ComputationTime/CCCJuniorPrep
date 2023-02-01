@@ -38,6 +38,8 @@ for i in range(n):
     c,x = input().split()
     action(c,int(x))
 
+friendlist.sort(key=lambda x: x[0])
+
 for tup in friendlist:
     if tup[3] == False:
         print(f'{tup[0]} -1')
@@ -48,12 +50,7 @@ for tup in friendlist:
 
 # 5
 # R 2
-# 0
 # R 3
-# 1
 # W 5
-# 5
 # S 2
-# 6
 # S 3
-# 7
