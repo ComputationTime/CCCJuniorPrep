@@ -4,6 +4,7 @@ k = int(input())
 output = 0
 painting = [['B' for i in range(n)]for i in range(m)]
 duplicates = []
+paintlist = []
 def paint(rc,num):
     num -= 1
     if rc == 'R':
@@ -24,7 +25,12 @@ def paint(rc,num):
 
 for i in range(k):
     rc,num = input().split()
-    paint(rc,int(num))
+    if (rc,num) in duplicates:
+        duplicates.remove((rc,num))
+    else:
+        paintlist.append((rc,num))
+for i in paintlist:
+    paint(i[0],int(i[1]))
 
 
 for row in painting:
