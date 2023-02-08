@@ -17,6 +17,6 @@ if currentHour < 10:
     print("0", end = "")
 print(currentHour, end = ":") 
 
-if currentMinute < 10: #if the current minute is less than 10, add a zero to the beginning
+if currentMinute < 10: 
     print("0", end = "")
-print(currentMinute, end = "") #make sure the minute is an integer as it could be ex. 24.0
+print(currentMinute, end = "") 
